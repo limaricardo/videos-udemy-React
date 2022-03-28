@@ -13,7 +13,10 @@ class App extends React.Component {
         })
     };
 
+    
+
     render() {
+        console.log(process.env.REACT_APP_YOUTUBE_KEY)
         return (
         <div className="ui container">
             <SearchBar onFormSubmit={this.onTermSubmit} />
